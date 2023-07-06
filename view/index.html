@@ -155,7 +155,7 @@
             <th scope="col" class="customer px-6 py-3 hidden-cus">Khác</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody">
           <tr
             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
           >
@@ -226,7 +226,7 @@
                 <p class="font-semibold text-gray-900 dark:text-white">
                   Chọn chức vụ:
                 </p>
-                <select class="rounded-2xl" name="" id="form-choice">
+                <select class="rounded-2xl" id="form-choice">
                   <option value="Student" selected>Student</option>
                   <option value="Employee">Employee</option>
                   <option value="Customer">Customer</option>
@@ -264,7 +264,6 @@
                   >
                   <input
                     type="text"
-                    name="first-name"
                     id="hoTen"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Bonnie"
@@ -279,7 +278,6 @@
                   >
                   <input
                     type="text"
-                    name="last-name"
                     id="address"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="7 Grove Street"
@@ -294,7 +292,6 @@
                   >
                   <input
                     type="number"
-                    name="phone-number"
                     id="userID"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="SE1234"
@@ -309,7 +306,6 @@
                   >
                   <input
                     type="email"
-                    name="email"
                     id="email"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="example@company.com"
@@ -324,8 +320,7 @@
                     >Toán</label
                   >
                   <input
-                    type="text"
-                    name="department"
+                    type="number"
                     id="toan"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
@@ -340,7 +335,6 @@
                   >
                   <input
                     type="number"
-                    name="company"
                     id="ly"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="9"
@@ -355,7 +349,6 @@
                   >
                   <input
                     type="number"
-                    name="current-password"
                     id="hoa"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="10"
@@ -372,12 +365,10 @@
                     >Ngày làm việc</label
                   >
                   <input
-                    type="text"
-                    name="department"
+                    type="number"
                     id="workDay"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
-                    required=""
                   />
                 </div>
                 <div
@@ -389,11 +380,10 @@
                     >Lương theo ngày</label
                   >
                   <input
-                    type="text"
-                    name="department"
+                    type="number"
                     id="daySalary"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="8"
+                    placeholder="45678"
                     required=""
                   />
                 </div>
@@ -406,10 +396,9 @@
                   >
                   <input
                     type="text"
-                    name="department"
                     id="tenCty"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="8"
+                    placeholder="5678"
                     required=""
                   />
                 </div>
@@ -421,7 +410,6 @@
                   >
                   <input
                     type="text"
-                    name="department"
                     id="bill"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
@@ -436,7 +424,6 @@
                   >
                   <input
                     type="text"
-                    name="department"
                     id="rate"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
@@ -473,11 +460,11 @@
     <script src="../js/controller.js"></script>
     <script src="../js/main.js"></script>
     <!-- Class  -->
+    <script src="../js/Class/Person.js"></script>
     <script src="../js/Class/Customer.js"></script>
     <script src="../js/Class/Employee.js"></script>
-    <script src="../js/Class/ListPerson.js"></script>
-    <script src="../js/Class/Person.js"></script>
     <script src="../js/Class/Student.js"></script>
+    <script src="../js/Class/ListPerson.js"></script>
   </body>
   <footer>
     <button

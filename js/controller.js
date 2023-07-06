@@ -12,6 +12,3 @@ turnOffClassIfExist = (classForQuery, classToTurnOff) => {
   }
 };
 //================================
-let studentList = [];
-let employeeList = [];
-let customerList = [];
