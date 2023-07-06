@@ -31,9 +31,10 @@
             class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             type="button"
           >
+            <p class="font-bold">Bạn Là:......</p>
             <!-- screen reader -->
             <span class="sr-only">Action button</span>
-            <span id="choice">Bạn là?...</span>
+            <span id="choice">Student</span>
             <svg
               class="w-3 h-3 ml-2"
               aria-hidden="true"
@@ -133,44 +134,60 @@
             <th scope="col" class="px-6 py-3">Mã</th>
             <th scope="col" class="px-6 py-3">Email</th>
             <!-- *student  -->
-            <th scope="col" class="px-6 py-3">Toán</th>
-            <th scope="col" class="px-6 py-3">Lý</th>
-            <th scope="col" class="px-6 py-3">Hóa</th>
+            <th scope="col" class="student px-6 py-3">Toán</th>
+            <th scope="col" class="student px-6 py-3">Lý</th>
+            <th scope="col" class="student px-6 py-3">Hóa</th>
+            <th scope="col" class="student px-6 py-3">Khác</th>
             <!-- *Employee              -->
-            <th scope="col" class="px-6 py-3 hidden-employ">Ngày làm việc</th>
-            <th scope="col" class="px-6 py-3 hidden-employ">Lương theo ngày</th>
+            <th scope="col" class="employee px-6 py-3 hidden-employ">
+              Ngày làm việc
+            </th>
+            <th scope="col" class="employee px-6 py-3 hidden-employ">
+              Lương theo ngày
+            </th>
+            <th scope="col" class="employee px-6 py-3 hidden-employ">Khác</th>
             <!-- *Customer  -->
-            <th scope="col" class="employ px-6 py-3 hidden-cus">Tên Cty</th>
-            <th scope="col" class="employ px-6 py-3 hidden-cus">
+            <th scope="col" class="customer px-6 py-3 hidden-cus">Tên Cty</th>
+            <th scope="col" class="customer px-6 py-3 hidden-cus">
               Trị giá hóa đơn
             </th>
-            <th scope="col" class="employ px-6 py-3 hidden-cus">Đánh giá</th>
+            <th scope="col" class="customer px-6 py-3 hidden-cus">Đánh giá</th>
+            <th scope="col" class="customer px-6 py-3 hidden-cus">Khác</th>
           </tr>
         </thead>
         <tbody>
           <tr
             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
           >
+            <!-- !Tên  -->
             <th
               scope="row"
               class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
             >
               <div class="">
                 <div class="text-base font-semibold">Neil Sims</div>
-                <div class="font-normal text-gray-500">
-                  neil.sims@flowbite.com
-                </div>
               </div>
             </th>
+            <!-- !Địa chỉ  -->
             <td class="px-6 py-4">React Developer</td>
-            <td class="px-6 py-4">
-              <div class="flex items-center">
-                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>
-                Online
-              </div>
+            <!-- !Mã  -->
+            <td
+              scope="row"
+              class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              SE1234
             </td>
-            <td class="px-6 py-4">
-              <!-- Modal toggle -->
+            <!-- !gmail  -->
+            <td class="px-6 py-4">React Developer@gmail.com</td>
+            <!-- !Toán  -->
+            <td class="px-6 py-4">9</td>
+            <!-- !Lý  -->
+            <td class="px-6 py-4">9</td>
+            <!-- !Hóa  -->
+            <td class="px-6 py-4">9</td>
+            <!-- !Khác  -->
+            <!-- <td class="px-6 py-4">
+              Modal toggle
               <a
                 href="#"
                 type="button"
@@ -179,127 +196,7 @@
                 class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                 >Edit user</a
               >
-            </td>
-          </tr>
-          <tr
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-          >
-            <th
-              scope="row"
-              class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="">
-                <div class="text-base font-semibold">Bonnie Green</div>
-                <div class="font-normal text-gray-500">bonnie@flowbite.com</div>
-              </div>
-            </th>
-            <td class="px-6 py-4">Designer</td>
-            <td class="px-6 py-4">
-              <div class="flex items-center">
-                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>
-                Online
-              </div>
-            </td>
-            <td class="px-6 py-4">
-              <!-- Modal toggle -->
-              <a
-                href="#"
-                type="button"
-                data-modal-show="editUserModal"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit user</a
-              >
-            </td>
-          </tr>
-          <tr
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-          >
-            <th
-              scope="row"
-              class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="">
-                <div class="text-base font-semibold">Jese Leos</div>
-                <div class="font-normal text-gray-500">jese@flowbite.com</div>
-              </div>
-            </th>
-            <td class="px-6 py-4">Vue JS Developer</td>
-            <td class="px-6 py-4">
-              <div class="flex items-center">
-                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>
-                Online
-              </div>
-            </td>
-            <td class="px-6 py-4">
-              <!-- Modal toggle -->
-              <a
-                href="#"
-                type="button"
-                data-modal-show="editUserModal"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit user</a
-              >
-            </td>
-          </tr>
-          <tr
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-          >
-            <th
-              scope="row"
-              class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="">
-                <div class="text-base font-semibold">Thomas Lean</div>
-                <div class="font-normal text-gray-500">thomes@flowbite.com</div>
-              </div>
-            </th>
-            <td class="px-6 py-4">UI/UX Engineer</td>
-            <td class="px-6 py-4">
-              <div class="flex items-center">
-                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>
-                Online
-              </div>
-            </td>
-            <td class="px-6 py-4">
-              <!-- Modal toggle -->
-              <a
-                href="#"
-                type="button"
-                data-modal-show="editUserModal"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit user</a
-              >
-            </td>
-          </tr>
-          <tr
-            class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600"
-          >
-            <th
-              scope="row"
-              class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="">
-                <div class="text-base font-semibold">Leslie Livingston</div>
-                <div class="font-normal text-gray-500">leslie@flowbite.com</div>
-              </div>
-            </th>
-            <td class="px-6 py-4">SEO Specialist</td>
-            <td class="px-6 py-4">
-              <div class="flex items-center">
-                <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>
-                Offline
-              </div>
-            </td>
-            <td class="px-6 py-4">
-              <!-- Modal toggle -->
-              <a
-                href="#"
-                type="button"
-                data-modal-show="editUserModal"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit user</a
-              >
-            </td>
+            </td> -->
           </tr>
         </tbody>
       </table>
@@ -320,9 +217,22 @@
             <div
               class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
             >
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                Edit user
-              </h3>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                  Adjust user
+                </h3>
+              </div>
+              <div class="flex flex-col ml-80">
+                <p class="font-semibold text-gray-900 dark:text-white">
+                  Chọn chức vụ:
+                </p>
+                <select class="rounded-2xl" name="" id="form-choice">
+                  <option value="Student" selected>Student</option>
+                  <option value="Employee">Employee</option>
+                  <option value="Customer">Customer</option>
+                </select>
+              </div>
+              <!-- *dấu "x" -->
               <button
                 type="button"
                 class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -348,14 +258,14 @@
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
                   <label
-                    for="first-name"
+                    for="hoTen"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >First Name</label
+                    >Họ Tên</label
                   >
                   <input
                     type="text"
                     name="first-name"
-                    id="first-name"
+                    id="hoTen"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Bonnie"
                     required=""
@@ -363,16 +273,31 @@
                 </div>
                 <div class="col-span-6 sm:col-span-3">
                   <label
-                    for="last-name"
+                    for="address"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Last Name</label
+                    >Địa chỉ</label
                   >
                   <input
                     type="text"
                     name="last-name"
-                    id="last-name"
+                    id="address"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Green"
+                    placeholder="7 Grove Street"
+                    required=""
+                  />
+                </div>
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="userID"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Mã</label
+                  >
+                  <input
+                    type="number"
+                    name="phone-number"
+                    id="userID"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="SE1234"
                     required=""
                   />
                 </div>
@@ -391,78 +316,130 @@
                     required=""
                   />
                 </div>
-                <div class="col-span-6 sm:col-span-3">
+                <!-- Student -->
+                <div class="formStudent col-span-6 sm:col-span-3">
                   <label
-                    for="phone-number"
+                    for="toan"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Phone Number</label
-                  >
-                  <input
-                    type="number"
-                    name="phone-number"
-                    id="phone-number"
-                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="e.g. +(12)3456 789"
-                    required=""
-                  />
-                </div>
-                <div class="col-span-6 sm:col-span-3">
-                  <label
-                    for="department"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Department</label
+                    >Toán</label
                   >
                   <input
                     type="text"
                     name="department"
-                    id="department"
+                    id="toan"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Development"
+                    placeholder="8"
                     required=""
                   />
                 </div>
-                <div class="col-span-6 sm:col-span-3">
+                <div class="formStudent col-span-6 sm:col-span-3">
                   <label
-                    for="company"
+                    for="ly"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Company</label
+                    >Lý</label
                   >
                   <input
                     type="number"
                     name="company"
-                    id="company"
+                    id="ly"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="123456"
+                    placeholder="9"
                     required=""
                   />
                 </div>
-                <div class="col-span-6 sm:col-span-3">
+                <div class="formStudent col-span-6 sm:col-span-3">
                   <label
-                    for="current-password"
+                    for="hoa"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Current Password</label
+                    >Hóa</label
                   >
                   <input
                     type="password"
                     name="current-password"
-                    id="current-password"
+                    id="hoa"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="••••••••"
+                    placeholder="10"
                     required=""
                   />
                 </div>
-                <div class="col-span-6 sm:col-span-3">
+                <!-- Employee  -->
+                <div
+                  class="formEmployee hidden-employ col-span-6 sm:col-span-3"
+                >
                   <label
-                    for="new-password"
+                    for="workDay"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >New Password</label
+                    >Ngày làm việc</label
                   >
                   <input
-                    type="password"
-                    name="new-password"
-                    id="new-password"
+                    type="text"
+                    name="department"
+                    id="workDay"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="••••••••"
+                    placeholder="8"
+                    required=""
+                  />
+                </div>
+                <div
+                  class="formEmployee hidden-employ col-span-6 sm:col-span-3"
+                >
+                  <label
+                    for="daySalary"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Lương theo ngày</label
+                  >
+                  <input
+                    type="text"
+                    name="department"
+                    id="daySalary"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="8"
+                    required=""
+                  />
+                </div>
+                <!-- Customer  -->
+                <div class="formCustomer hidden-cus col-span-6 sm:col-span-3">
+                  <label
+                    for="tenCty"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Tên Công Ty</label
+                  >
+                  <input
+                    type="text"
+                    name="department"
+                    id="tenCty"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="8"
+                    required=""
+                  />
+                </div>
+                <div class="formCustomer hidden-cus col-span-6 sm:col-span-3">
+                  <label
+                    for="bill"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Trị giá hóa đơn</label
+                  >
+                  <input
+                    type="text"
+                    name="department"
+                    id="bill"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="8"
+                    required=""
+                  />
+                </div>
+                <div class="formCustomer hidden-cus col-span-6 sm:col-span-3">
+                  <label
+                    for="rate"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Đánh giá</label
+                  >
+                  <input
+                    type="text"
+                    name="department"
+                    id="rate"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="8"
                     required=""
                   />
                 </div>
@@ -472,6 +449,12 @@
             <div
               class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
             >
+              <button
+                class="text-white bg-yellow-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                onclick="handleAddNV()"
+              >
+                add
+              </button>
               <button
                 type="submit"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -486,11 +469,25 @@
     <!-- Flowbite  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     <!-- myJS  -->
+    <script src="../js/modal.js"></script>
+    <script src="../js/controller.js"></script>
     <script src="../js/main.js"></script>
+    <!-- Class  -->
+    <script src="../js/Class/Customer.js"></script>
+    <script src="../js/Class/Employee.js"></script>
+    <script src="../js/Class/ListPerson.js"></script>
+    <script src="../js/Class/Person.js"></script>
+    <script src="../js/Class/Student.js"></script>
   </body>
   <footer>
-    <button class="px-6 py-2 text-white bg-red-600" type="button" onclick="a()">
-      Button
+    <button
+      href="#"
+      type="button"
+      data-modal-target="editUserModal"
+      data-modal-show="editUserModal"
+      class="font-medium text-blue-600 dark:text-blue-500 hover:underline px-6 py-2 bg-yellow-600 text-white"
+    >
+      Edit user
     </button>
   </footer>
 </html>
