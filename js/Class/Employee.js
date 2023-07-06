@@ -1,13 +1,13 @@
-class Employee extends Person{
-    constructor(wDay,sDay){
-        super();
-        this.WorkingDay=wDay;
-        this.DaySalary=sDay;
+class Employee extends Person {
+    constructor(wDay, sDay) {
+        super(ten, addr, id, email);
+        this.WorkingDay = wDay;
+        this.DaySalary = sDay;
     }
-    getWorkingDay(){
+    getWorkingDay() {
         return this.WorkingDay;
     }
-    getDaySalary(){
+    getDaySalary() {
         return this.DaySalary;
     }
 }
