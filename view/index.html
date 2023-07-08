@@ -156,48 +156,7 @@
           </tr>
         </thead>
         <tbody id="tbody">
-          <tr
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-          >
-            <!-- !Tên  -->
-            <th
-              scope="row"
-              class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="">
-                <div class="text-base font-semibold">Neil Sims</div>
-              </div>
-            </th>
-            <!-- !Địa chỉ  -->
-            <td class="px-6 py-4">React Developer</td>
-            <!-- !Mã  -->
-            <td
-              scope="row"
-              class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              SE1234
-            </td>
-            <!-- !gmail  -->
-            <td class="px-6 py-4">React Developer@gmail.com</td>
-            <!-- !Toán  -->
-            <td class="px-6 py-4">9</td>
-            <!-- !Lý  -->
-            <td class="px-6 py-4">9</td>
-            <!-- !Hóa  -->
-            <td class="px-6 py-4">9</td>
-            <!-- !Khác  -->
-            <!-- <td class="px-6 py-4">
-              Modal toggle
-              <a
-                href="#"
-                type="button"
-                data-modal-target="editUserModal"
-                data-modal-show="editUserModal"
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit user</a
-              >
-            </td> -->
-          </tr>
+          <!-- !itemHere  -->
         </tbody>
       </table>
       <!-- Edit user modal -->
@@ -264,6 +223,7 @@
                   >
                   <input
                     type="text"
+                    name="hoTen"
                     id="hoTen"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Bonnie"
@@ -278,6 +238,7 @@
                   >
                   <input
                     type="text"
+                    name="address"
                     id="address"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="7 Grove Street"
@@ -293,6 +254,7 @@
                   <input
                     type="number"
                     id="userID"
+                    name="userID"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="SE1234"
                     required=""
@@ -307,6 +269,7 @@
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="example@company.com"
                     required=""
@@ -322,6 +285,7 @@
                   <input
                     type="number"
                     id="toan"
+                    name="toan"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
                     required=""
@@ -336,6 +300,7 @@
                   <input
                     type="number"
                     id="ly"
+                    name="ly"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="9"
                     required=""
@@ -350,6 +315,7 @@
                   <input
                     type="number"
                     id="hoa"
+                    name="hoa"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="10"
                     required=""
@@ -367,6 +333,7 @@
                   <input
                     type="number"
                     id="workDay"
+                    name="workDay"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
                   />
@@ -382,6 +349,7 @@
                   <input
                     type="number"
                     id="daySalary"
+                    name="daySalary"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="45678"
                     required=""
@@ -397,6 +365,7 @@
                   <input
                     type="text"
                     id="tenCty"
+                    name="tenCty"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="5678"
                     required=""
@@ -411,6 +380,7 @@
                   <input
                     type="text"
                     id="bill"
+                    name="bill"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
                     required=""
@@ -425,6 +395,7 @@
                   <input
                     type="text"
                     id="rate"
+                    name="rate"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="8"
                     required=""
@@ -445,6 +416,7 @@
               <button
                 type="submit"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                onclick="save()"
               >
                 Save all
               </button>
@@ -455,16 +427,18 @@
     </div>
     <!-- Flowbite  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
-    <!-- myJS  -->
-    <script src="../js/modal.js"></script>
-    <script src="../js/controller.js"></script>
-    <script src="../js/main.js"></script>
+
     <!-- Class  -->
     <script src="../js/Class/Person.js"></script>
     <script src="../js/Class/Customer.js"></script>
     <script src="../js/Class/Employee.js"></script>
     <script src="../js/Class/Student.js"></script>
     <script src="../js/Class/ListPerson.js"></script>
+
+    <!-- myJS  -->
+    <script src="../js/modal.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/main.js"></script>
   </body>
   <footer>
     <button
@@ -472,7 +446,7 @@
       type="button"
       data-modal-target="editUserModal"
       data-modal-show="editUserModal"
-      class="font-medium text-blue-600 dark:text-blue-500 hover:underline px-6 py-2 bg-yellow-600 text-white"
+      class="text-blue-600 dark:text-blue-500 hover:underline px-6 py-2 bg-yellow-600 text-white"
     >
       Edit user
     </button>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.0-alpha.1/tailwind.min.css"
+      integrity="sha512-NUFPUFpyuQGekaUg+cNAh8qN0bwd04x5tBgYRT9iNdrUV38gVu4QU0jlx1CSBKPOnp5invOm0HPW4+cXqjBeAQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="option">
+      <p class="font-semibold text-gray-900 dark:text-white">Chọn chức vụ:</p>
+      <select class="rounded-2xl" id="form-choice">
+        <option value="Student" selected>Student</option>
+        <option value="Employee">Employee</option>
+        <option value="Customer">Customer</option>
+      </select>
+    </div>
+    <div class="flex flex-col">
+      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+          <div class="overflow-hidden">
+            <table
+              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <thead class="border-b font-medium dark:border-neutral-500">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Họ tên</th>
+                  <th scope="col" class="px-6 py-3">Địa chỉ</th>
+                  <th scope="col" class="px-6 py-3">Mã</th>
+                  <th scope="col" class="px-6 py-3">Email</th>
+                  <!-- *student  -->
+                  <th scope="col" class="student px-6 py-3">Toán</th>
+                  <th scope="col" class="student px-6 py-3">Lý</th>
+                  <th scope="col" class="student px-6 py-3">Hóa</th>
+                  <th scope="col" class="student px-6 py-3">Khác</th>
+                  <!-- *Employee              -->
+                  <th scope="col" class="employee px-6 py-3 hidden-employ">
+                    Ngày làm việc
+                  </th>
+                  <th scope="col" class="employee px-6 py-3 hidden-employ">
+                    Lương theo ngày
+                  </th>
+                  <th scope="col" class="employee px-6 py-3 hidden-employ">
+                    Khác
+                  </th>
+                  <!-- *Customer  -->
+                  <th scope="col" class="customer px-6 py-3 hidden-cus">
+                    Tên Cty
+                  </th>
+                  <th scope="col" class="customer px-6 py-3 hidden-cus">
+                    Trị giá hóa đơn
+                  </th>
+                  <th scope="col" class="customer px-6 py-3 hidden-cus">
+                    Đánh giá
+                  </th>
+                  <th scope="col" class="customer px-6 py-3 hidden-cus">
+                    Khác
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
+                  <td class="whitespace-nowrap px-6 py-4">Mark</td>
+                  <td class="whitespace-nowrap px-6 py-4">Otto</td>
+                  <td class="whitespace-nowrap px-6 py-4">@mdo</td>
+                </tr>
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
+                  <td class="whitespace-nowrap px-6 py-4">Jacob</td>
+                  <td class="whitespace-nowrap px-6 py-4">Thornton</td>
+                  <td class="whitespace-nowrap px-6 py-4">@fat</td>
+                </tr>
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
+                  <td class="whitespace-nowrap px-6 py-4">Larry</td>
+                  <td class="whitespace-nowrap px-6 py-4">Wild</td>
+                  <td class="whitespace-nowrap px-6 py-4">@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class  -->
+    <script src="../js/Class/Person.js"></script>
+    <script src="../js/Class/Customer.js"></script>
+    <script src="../js/Class/Employee.js"></script>
+    <script src="../js/Class/Student.js"></script>
+    <script src="../js/Class/ListPerson.js"></script>
+
+    <!-- myJS  -->
+    <script src="../js/modal.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
